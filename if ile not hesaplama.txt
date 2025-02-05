@@ -1,0 +1,41 @@
+using System.Linq;
+
+namespace Vize_final_hesaplama;
+
+public static class Program
+{
+    public static void Main()
+    {
+        Console.WriteLine("vize notunuzu girin.");
+        int vize = Convert.ToInt32(Console.ReadLine());
+
+        Console.WriteLine("Final notunuzu girin.");
+        int final = Convert.ToInt32(Console.ReadLine());
+
+        double not = (vize * 0.4 + final * 0.6);
+
+
+        if (not >= 49.5)
+
+
+        {
+            Console.WriteLine("{0} notunuz", not);
+            Console.WriteLine("Gectiniz ");
+
+
+
+        }
+
+        else
+
+        {
+            Console.WriteLine("{0} notunuz", not);
+            Console.WriteLine("Kaldiniz ");
+
+
+
+        }
+
+    }
+}
+

@@ -1,0 +1,29 @@
+using System;
+using System.Linq;
+
+namespace İki_sayi_arasi_cift_degerleri_yazdirma_projesi;
+
+public static class Program
+{
+    public static void Main()
+    {
+
+        Console.WriteLine("Baslangic degerini yazin");
+        int baslangic = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine("Bitis degerini yazin");
+        int bitis = Convert.ToInt32(Console.ReadLine());
+        Console.ReadKey();
+
+        for (int i = baslangic; i < bitis + 1; i++)
+        {
+            if (i % 2 == 0)
+            {
+                Console.WriteLine(i);
+            }
+            else
+                continue;
+        }
+
+
+    }
+}
