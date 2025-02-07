@@ -1,0 +1,40 @@
+using System;
+using System.Linq;
+
+namespace Sayi_tahmin_projesi;
+
+public static class Program
+{
+    public static void Main()
+    {
+        int sayi = new Random().Next(0, 100);
+        int sayi1 = 0;
+
+
+
+
+        do
+        {
+            Console.Write("0 ile 100 arasinda bir sayi tuttum bu sayiyi tahmin et");
+            sayi1 = int.Parse(Console.ReadLine());
+
+            if (sayi > sayi1)
+            {
+                Console.WriteLine("Yukari");
+
+            }
+            else if (sayi < sayi1)
+            {
+                Console.WriteLine("Asagi");
+            }
+
+        } while (sayi != sayi1);
+
+
+
+        Console.Write("Tahminin dogru sayi={0}", sayi);
+        Console.ReadKey();
+
+    }
+}
+
